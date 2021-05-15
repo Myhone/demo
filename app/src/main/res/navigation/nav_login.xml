@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.jsx.mysunflower.view.fragment.LoginFragment"
+        android:name="com.jsx.demo.view.fragment.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login">
         <action
@@ -20,13 +20,13 @@
 
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.jsx.mysunflower.view.fragment.RegisterFragment"
+        android:name="com.jsx.demo.view.fragment.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
 
     <fragment
         android:id="@+id/resetPasswordFragment"
-        android:name="com.jsx.mysunflower.view.fragment.ResetPasswordFragment"
+        android:name="com.jsx.demo.view.fragment.ResetPasswordFragment"
         android:label="fragment_reset_password"
         tools:layout="@layout/fragment_reset_password" />
 </navigation>

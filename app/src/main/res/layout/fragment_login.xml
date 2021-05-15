@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.jsx.mysunflower.viewModel.LoginViewModel" />
+            type="com.jsx.demo.viewModel.LoginViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
