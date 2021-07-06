@@ -2,15 +2,12 @@ package com.jsx.demo.viewModel
 
 import android.view.View
 import androidx.navigation.Navigation
+import com.blankj.utilcode.util.LogUtils
 import com.jsx.demo.R
 import com.jsx.demo.base.BaseViewModel
 
 class LoginViewModel : BaseViewModel() {
     // TODO: Implement the ViewModel
-
-    fun toLogin() {
-
-    }
 
     val registerClickListener = View.OnClickListener {
         Navigation.findNavController(it)

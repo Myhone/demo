@@ -1,2 +1,4 @@
+include ':JetpackMvvm'
+include ':ktdemo'
 include ':app'
 rootProject.name = "Demo"

@@ -26,7 +26,7 @@ abstract class BaseActivity<VM : BaseViewModel, DB : ViewBinding> : AppCompatAct
         initViewDataBinding()
         lifecycle.addObserver(viewModel)
         //注册 UI事件
-        registorDefUIChange()
+        registerDefUIChange()
         initView(savedInstanceState)
         initData()
     }
@@ -69,7 +69,7 @@ abstract class BaseActivity<VM : BaseViewModel, DB : ViewBinding> : AppCompatAct
     /**
      * 注册 UI 事件
      */
-    private fun registorDefUIChange() {
+    private fun registerDefUIChange() {
 
     }
 

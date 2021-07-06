@@ -8,6 +8,7 @@
         <variable
             name="viewModel"
             type="com.jsx.demo.viewModel.LoginViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -68,7 +69,6 @@
         <Button
             android:id="@+id/btn_login"
             style="@style/CommonButtonStyle"
-            android:onClick="@{() -> viewModel.toLogin()}"
             android:text="@string/login"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"

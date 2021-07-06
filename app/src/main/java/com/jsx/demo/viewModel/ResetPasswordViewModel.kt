@@ -1,4 +1,4 @@
-package com.jsx.demo.view.fragment
+package com.jsx.demo.viewModel
 
 import androidx.lifecycle.ViewModel
 

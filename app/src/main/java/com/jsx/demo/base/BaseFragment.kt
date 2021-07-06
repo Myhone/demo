@@ -40,7 +40,7 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewBinding> : Fragment() {
         createViewModel()
         lifecycle.addObserver(viewModel)
         //注册 UI事件
-        registorDefUIChange()
+//        registorDefUIChange()
         initView(savedInstanceState)
     }
 
