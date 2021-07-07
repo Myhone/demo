@@ -13,6 +13,8 @@ import com.zhpan.bannerview.BaseViewHolder
 class WelcomeViewHolder(view: View) : BaseViewHolder<String>(view) {
     override fun bindData(data: String?, position: Int, pageSize: Int) {
         val imageView = findView<ImageView>(R.id.iv_welcome)
-        imageView.load(data)
+        imageView.load(data){
+
+        }
     }
 }

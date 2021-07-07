@@ -22,9 +22,9 @@ import me.hgj.jetpackmvvm.ext.view.visible
 class WelcomeActivity : BaseActivity<BaseViewModel, ActivityWelcomeBinding>() {
 
     private var imgList = arrayOf(
-        "https://wanandroid.com/blogimgs/31c2394c-b07c-4699-afd1-95aa7a3bebc6.png",
-        "https://www.wanandroid.com/blogimgs/62c1bd68-b5f3-4a3c-a649-7ca8c7dfabe6.png",
-        "https://www.wanandroid.com/blogimgs/50c115c2-cf6c-4802-aa7b-a4334de444cd.png"
+        "https://img1.baidu.com/it/u=1042337615,3058724003&fm=26&fmt=auto&gp=0.jpg",
+        "https://img2.baidu.com/it/u=1716783366,3300459381&fm=26&fmt=auto&gp=0.jpg",
+        "https://img2.baidu.com/it/u=1364574569,3070008364&fm=26&fmt=auto&gp=0.jpg"
     )
     private lateinit var viewPage: BannerViewPager<String, WelcomeViewHolder>
 
@@ -37,6 +37,7 @@ class WelcomeActivity : BaseActivity<BaseViewModel, ActivityWelcomeBinding>() {
         mDataBind.clBg.setBackgroundColor(SettingUtil.getColor(this))
         viewPage = findViewById(R.id.vp_banner)
         if (CacheUtil.isFirst()) {
+            mDataBind.ivLogo.gone()
             viewPage.apply {
                 adapter = WelcomeViewPageAdapter()
                 setLifecycleRegistry(lifecycle)
@@ -52,11 +53,11 @@ class WelcomeActivity : BaseActivity<BaseViewModel, ActivityWelcomeBinding>() {
                 })
             }.create(imgList.toList())
         } else {
-
+            mDataBind.ivLogo.visible()
             viewPage.postDelayed(Runnable {
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
-            }, 300)
+            }, 1000)
         }
     }
 
