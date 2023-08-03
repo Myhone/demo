@@ -1,4 +1,4 @@
-package com.jsx.ktdemo.viewmodel
+package com.jsx.ktdemo.viewModel
 
 import android.view.View
 import androidx.databinding.ObservableInt

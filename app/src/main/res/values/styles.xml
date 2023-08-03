@@ -14,6 +14,18 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <!--透明activity的style-->
+    <style name="transparent_activity" parent="Base.Theme.MySunflower">
+        <item name="android:background">@android:color/transparent</item><!--  设置布局背景-->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 设置背景颜色-->
+        <item name="android:windowContentOverlay">@android:color/transparent</item><!-- 设置主题-->
+        <item name="android:backgroundDimAmount">0.1</item><!-- 设置背景模糊的透明度-->
+        <item name="android:windowNoTitle">true</item><!-- 设置是否没有标题-->
+        <item name="android:windowIsFloating">true</item><!-- 设置dialog是否悬浮在activity上-->
+        <item name="android:backgroundDimEnabled">true</item><!-- 设置弹出的对话框背景是否是暗的-->
+        <item name="android:windowIsTranslucent">true</item><!-- 设置是否半透明-->
+    </style>
+
     <style name="Theme.MySunflower.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
     <style name="TextAppearance.MySunflower.Toolbar.Text" parent="TextAppearance.MaterialComponents.Headline5">
